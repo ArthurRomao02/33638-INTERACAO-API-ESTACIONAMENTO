@@ -1,11 +1,11 @@
 const API_URL = "http://cnms-parking-api.net.uztec.com.br/api/v1";
 
-// Carregar veículos ativos
+
 function carregarVeiculos() {
   const imagem = document.getElementById("imagemcat");
   const veiculosDiv = document.getElementById("veiculosList");
 
-  // Esconde a imagem e mostra a lista
+  
   imagem.style.display = "none";
   veiculosDiv.style.display = "block";
 
@@ -35,13 +35,13 @@ function carregarVeiculos() {
     });
 }
 
-// Função para voltar a imagem
+
 function voltarImagem() {
   document.getElementById("imagemDado").style.display = "block";
   document.getElementById("veiculosList").style.display = "none";
 }
 
-// Verificar veículo
+
 function verificarVeiculo() {
   const placa = prompt("Digite a placa:");
   if (!placa) return;
@@ -57,7 +57,7 @@ function verificarVeiculo() {
     .catch(err => alert(err.message));
 }
 
-// Cancelar veículo
+
 function cancelarVeiculo() {
   const placa = prompt("Digite a placa do veículo para cancelar:");
   if (!placa) return;
@@ -71,7 +71,7 @@ function cancelarVeiculo() {
     .catch(err => alert("Erro ao cancelar veículo."));
 }
 
-// Registrar entrada
+
 function registrarEntrada() {
   const placa = prompt("Digite a placa:");
   const modelo = prompt("Digite o modelo:");
@@ -90,7 +90,7 @@ function registrarEntrada() {
     .catch(err => alert("Erro ao registrar entrada."));
 }
 
-// Registrar saída
+
 function registrarSaida() {
   const placa = prompt("Digite a placa do veículo que está saindo:");
   if (!placa) return;
