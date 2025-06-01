@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Um felino estacionado </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="esquerda" id="painelEsquerda">
+            <h1>Estacionamento:</h1>
+            <img src="https://i.pinimg.com/736x/8b/e3/69/8be369aeed92cf03051b9951d1b7b150.jpg" alt="cat" class="imagem" id="imagemcat">
+            <h1>Estacionamento Para Gatos</h1>
+
+            <!-- Div para exibir os veículos no lugar da imagem -->
+            <div id="veiculosList" class="resultado" style="display: none;"></div>
+
+            <!-- Botão para voltar à imagem -->
+            <button onclick="voltarImagem()">Voltar</button>
+        </div>
+
+        <div class="direita">
+            <button onclick="registrarEntrada()">Entrada de Veículos</button>
+            <button onclick="registrarSaida()">Saída de Veículos</button>
+            <button onclick="verificarVeiculo()">Pesquisa</button>
+            <button onclick="cancelarVeiculo()">Remover registro</button><br><br>
+            <button onclick="carregarVeiculos()">Listar todos os veículos</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
