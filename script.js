@@ -37,7 +37,7 @@ function carregarVeiculos() {
 
 
 function voltarImagem() {
-  document.getElementById("imagemDado").style.display = "block";
+  document.getElementById("imagemcat").style.display = "block";
   document.getElementById("veiculosList").style.display = "none";
 }
 
